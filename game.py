@@ -1,8 +1,9 @@
 
 from pieces import *
+from typing import List, Tuple
 
 
-def position_to_rect(position: [int]) -> (int, int, int, int):
+def position_to_rect(position: List[int]) -> Tuple[int]:
     return (position % 8) * 100, (position // 8) * 100, 100, 100
 
 
