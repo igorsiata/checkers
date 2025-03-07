@@ -35,10 +35,10 @@ class Game:
     def draw_possible_moves(self, pieceindex) -> None:
         if not self.allpieces.captures:
             for position in self.allpieces.possiblemoves[pieceindex]:
-                self.screen.blit(pygame.image.load('move.png'), position_to_rect(position))
+                self.screen.blit(pygame.image.load('assets/move.png'), position_to_rect(position))
         for capture in self.allpieces.captures:
             if capture[0] == pieceindex:
-                self.screen.blit(pygame.image.load('move.png'), position_to_rect(capture[1]))
+                self.screen.blit(pygame.image.load('assets/move.png'), position_to_rect(capture[1]))
 
     def move(self):
         mouseposition = mouse_cord()

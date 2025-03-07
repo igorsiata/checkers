@@ -6,11 +6,11 @@ class Piece:
         self.position = position
         self.isblue = isblue
         self.isqueen = isqueen
-        self.image = pygame.image.load('blue_checker.png') if isblue else pygame.image.load('red_checker.png')
+        self.image = pygame.image.load('assets/blue_checker.png') if isblue else pygame.image.load('assets/red_checker.png')
 
     def queen(self):
         self.isqueen = True
-        self.image = pygame.image.load('blue_queen.png') if self.isblue else pygame.image.load('red_queen.png')
+        self.image = pygame.image.load('assets/blue_queen.png') if self.isblue else pygame.image.load('assets/red_queen.png')
 
 
 class AllPieces:
